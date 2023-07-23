@@ -10,13 +10,19 @@
   background-color: $logo_green;
   display: inline-block;
   padding: rem(45) rem(56);
-  min-width: rem(500);
+  min-width: initial;
+  max-width: rem(500);
+  width: 100%;
   border-radius: rem(16);
   position: relative;
   transition: all .3s;
   display: inline-flex;
   flex-direction: column-reverse;
   align-items: flex-start;
+  
+  @include mq("md"){
+    min-width: rem(500);
+  }
 }
 .c-btn-large::before{
   content: attr(data-en);

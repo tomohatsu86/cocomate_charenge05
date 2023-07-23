@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.p-feature{
+  // background-color: $bg_yellow_green;
+  background: linear-gradient(to bottom, $bg_yellow_green 0, $bg_yellow_green 68%, $white 68%, $white 100%);
+  padding: rem(100) 0 rem(120);
+}
+.p-feature__contents{
+  margin-top: rem(40);
+  
+  @include mq("md"){
+    margin-top: rem(56);
+  }
+}
+.p-feature__item:nth-child(n+2){
+  margin-top: rem(80);
+}
+.p-feature__btn{
+  text-align: center;
+  margin-top: rem(42);
+  
+  @include mq("md"){
+    margin-top: rem(84);
+  }
+}

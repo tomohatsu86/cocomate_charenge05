@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.p-service{
+  background-color: $bg_yellow_green;
+  padding: rem(212) 0 rem(136);
+}
+.p-service__contents{
+  margin-top: rem(56);
+}

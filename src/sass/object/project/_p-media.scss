@@ -64,7 +64,7 @@
   margin-bottom: rem(-30);
   
   @include mq("md"){
-    margin-left: rem(-250);
+    margin-left: rem(-258);
     margin-bottom: 0;
   }
 }
@@ -92,7 +92,7 @@
   margin-right: 0;
   
   @include mq("md"){
-    margin-right: rem(-250);
+    margin-right: rem(-258);
     
   }
 }

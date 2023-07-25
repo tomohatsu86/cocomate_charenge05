@@ -3,6 +3,10 @@
 .p-service{
   background-color: $bg_yellow_green;
   padding: rem(212) 0 rem(136);
+  
+  @include mq("md"){
+    padding: rem(212) 0 rem(172);
+  }
 }
 .p-service__contents{
   margin-top: rem(40);

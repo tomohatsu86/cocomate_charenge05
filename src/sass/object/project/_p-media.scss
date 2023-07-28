@@ -20,7 +20,7 @@
   padding: rem(28);
   border-radius: rem(16);
   background-color: $white;
-  box-shadow: 0 rem(10) rem(20) 0 rgba(#D2E991, 0.1);
+  box-shadow: 0 rem(10) rem(20) 0 rgba($color: #D2E991, $alpha: 0.1);;
   z-index: 1;
   position: relative;
   margin: 0 rem(20);
@@ -43,7 +43,7 @@
   box-decoration-break: clone;
   // -webkit-box-decoration-break: clone;
   border-radius: rem(2);
-  box-shadow: inset 1px 0.99em 0px 0 #fff, inset 0 0 0 1em rgba(#D2E991, 0.5);
+  box-shadow: inset 1px 0.99em 0px 0 #fff, inset 0 0 0 1em rgba($color: #D2E991, $alpha: 0.5);;
 }
 .p-media__text{
   font-family: $font-main;

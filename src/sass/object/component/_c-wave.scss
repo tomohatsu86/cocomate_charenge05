@@ -9,8 +9,12 @@
   --size: 25px;
   --p: 25px;
   --R: 34.9px;
-  height: 100px;
+  height: 80px;
   margin-bottom: -50px;
+  
+  @include mq("md"){
+    height: 100px;
+  }
 }
 .c-wave + .c-wave {
 background-repeat: repeat-x;

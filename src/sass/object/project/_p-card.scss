@@ -4,7 +4,7 @@
   width: 100%;
   border-radius: rem(16);
   background-color: $white;
-  box-shadow: 0 rem(10) rem(20) 0 rgba(#D2E991, 0.1);
+  box-shadow: 0 rem(10) rem(20) 0 rgba($color: #D2E991, $alpha: 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

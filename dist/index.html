@@ -29,51 +29,79 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
-  <main>
-
+  
   <!-- ヘッダー -->
   <header class="p-header">
-    
+    <div class="p-header__inner l-inner">
+      <h1 class="p-header__logo">
+        <a href="">
+          <img src="./images/logo.png" alt="cocomate医療クリニック">
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-list">
+          <li class="p-header__nav-item">
+            <a href="">診療時間・アクセス</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="">診療案内</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="">スタッフ紹介</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="">クリニック紹介</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="">お問い合わせ</a>
+          </li>
+        </ul>
+        <div class="p-header__btn">
+          <a href="" class="c-btn c-btn--pink c-btn--small">診察予約</a>
+        </div>
+      </nav>
+    </div>
   </header>
-
+  
+  <main>
   <!-- メインビュー -->
-  <div class="p-mv">
-    <div class="p-mv__wrapper">
-      <div class="p-mv__img">
-        <img src="./images/mv.jpg" alt="医者と子どもが笑っている写真">
-      </div>
-      <p class="p-mv__catchcopy">
-        健やかな笑顔があふれる<br>
-        小児クリニック
-        <span>The clinic with the most smiles of children</span>
-      </p>
-      <div class="p-mv__copyright">
-        <small>&copy; cocomate All Rights Reserved.</small>
-      </div>
-      <!-- お知らせ -->
-      <div class="p-news l-news">
-          <div class="p-news__inner">
-            <div class="p-news__box">
-              <h2 class="p-news__head c-section-title c-section-title--no-logo c-section-title--align-left" data-en="news">お知らせ</h2>
-              <ul class="p-news__lists">
+    <div class="p-mv">
+      <div class="p-mv__wrapper">
+        <div class="p-mv__img">
+          <img src="./images/mv.jpg" alt="医者と子どもが笑っている写真">
+        </div>
+        <p class="p-mv__catchcopy">
+          健やかな笑顔があふれる<br>
+          小児クリニック
+          <span>The clinic with the most smiles of children</span>
+        </p>
+        <div class="p-mv__copyright">
+          <small>&copy; cocomate All Rights Reserved.</small>
+        </div>
+        <!-- お知らせ -->
+        <div class="p-news l-news">
+            <div class="p-news__inner">
+              <div class="p-news__box">
+                <h2 class="p-news__head c-section-title c-section-title--no-logo c-section-title--align-left" data-en="news">お知らせ</h2>
+                <ul class="p-news__lists">
+                  <li class="p-news__item">
+                  <a href="">
+                    <time class="p-news__date" datetime="2023-05-20">2023.05.20</time>
+                    <p href="" class="p-news__title">発熱外来受診時のお願い</p>
+                  </a>
+                </li>
                 <li class="p-news__item">
-                <a href="">
-                  <time class="p-news__date" datetime="2023-05-20">2023.05.20</time>
-                  <p href="" class="p-news__title">発熱外来受診時のお願い</p>
-                </a>
-              </li>
-              <li class="p-news__item">
-                <a href="">
-                  <time class="p-news__date" datetime="2023-05-13">2023.05.13</time>
-                  <p href="" class="p-news__title">5/31(水) 午後臨時休診のお知らせ</p>
-                </a>
-              </li>
-            </ul>
+                  <a href="">
+                    <time class="p-news__date" datetime="2023-05-13">2023.05.13</time>
+                    <p href="" class="p-news__title">5/31(水) 午後臨時休診のお知らせ</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
 
   <!-- ご案内セクション -->
@@ -178,22 +206,22 @@
     </section>
 
   <!-- ご来院セクション -->
-  <section class="p-parients l-parients">
-    <div class="p-parients__wrapper">
-      <div class="p-parients__body">
-        <h2 class="c-section-title c-section-title--no-logo c-section-title--align-left" data-en="for parients">ご来院される方へ</h2>
-        <p class="p-parients__text">
-          地域に暮らす子どもたちが元気に健やかな笑顔で過ごせるよう、<br>
-          私たちは今日も子どもたちの病気や怪我に向き合っています。<br>
-          一人ひとりの心に寄り添いながら、不安な気持ちを和らげ、<br>
-          お子さまとご家族が「来てよかった」と笑顔で安心して帰っていただけるような最高のクリニックを目指します。
-        </p>
+    <section class="p-parients l-parients">
+      <div class="p-parients__wrapper">
+        <div class="p-parients__body">
+          <h2 class="c-section-title c-section-title--no-logo c-section-title--align-left" data-en="for parients">ご来院される方へ</h2>
+          <p class="p-parients__text">
+            地域に暮らす子どもたちが元気に健やかな笑顔で過ごせるよう、<br>
+            私たちは今日も子どもたちの病気や怪我に向き合っています。<br>
+            一人ひとりの心に寄り添いながら、不安な気持ちを和らげ、<br>
+            お子さまとご家族が「来てよかった」と笑顔で安心して帰っていただけるような最高のクリニックを目指します。
+          </p>
+        </div>
+        <div class="p-parients__link">
+          <a href="" class="c-text-link">スタッフ紹介を見る</a>
+        </div>
       </div>
-      <div class="p-parients__link">
-        <a href="" class="c-text-link">スタッフ紹介を見る</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
   <!-- 特徴セクション -->
     <section class="p-feature l-feature">
@@ -293,48 +321,50 @@
       </div>
     </div>
 
-    <!-- フッター -->
-    <footer class="p-footer">
-      <div class="p-footer__inner">
-        <div class="p-footer__links">
-          <div class="p-footer__sns">
-            <a href=""><img src="./images/icon_insta.png" alt=""></a>
-            <a href=""><img src="./images/icon_twitter.png" alt=""></a>
-            <a href=""><img src="./images/icon_facebook.png" alt=""></a>
-          </div>
-          <ul class="p-footer__nav">
-            <li class="p-footer__item">
-              <a href="">診療時間・アクセス</a>
-            </li>
-            <li class="p-footer__item">
-              <a href="">診療案内</a>
-            </li>
-            <li class="p-footer__item">
-              <a href="">スタッフ紹介</a>
-            </li>
-            <li class="p-footer__item">
-              <a href="">クリニック紹介</a>
-            </li>
-            <li class="p-footer__item">
-              <a href="">お問い合わせ</a>
-            </li>
-            <li class="p-footer__item">
-              <a href="">診察予約</a>
-            </li>
-          </ul>
-        </div>
-        <div class="p-footer__bottom">
-          <div class="p-footer__policies">
-            <a href="">利用規約</a>
-            <a href="">プライバシーポリシー</a>
-          </div>
-          <p class="p-footer__copyright">Copyright(c) cocomate All Rights Reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-
+    
   </main>
+
+  <!-- フッター -->
+  <footer class="p-footer">
+    <div class="p-footer__inner">
+      <div class="p-footer__links">
+        <div class="p-footer__sns">
+          <a href=""><img src="./images/icon_insta.png" alt=""></a>
+          <a href=""><img src="./images/icon_twitter.png" alt=""></a>
+          <a href=""><img src="./images/icon_facebook.png" alt=""></a>
+        </div>
+        <ul class="p-footer__nav">
+          <li class="p-footer__item">
+            <a href="">診療時間・アクセス</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">診療案内</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">スタッフ紹介</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">クリニック紹介</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">お問い合わせ</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">診察予約</a>
+          </li>
+        </ul>
+      </div>
+      <div class="p-footer__bottom">
+        <div class="p-footer__policies">
+          <a href="">利用規約</a>
+          <a href="">プライバシーポリシー</a>
+        </div>
+        <p class="p-footer__copyright">Copyright(c) cocomate All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
 
   <hr>
   <div class="l-inner">

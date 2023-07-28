@@ -38,3 +38,7 @@
 .c-btn.c-btn--pink{
   background-color: $btn_pink;
 }
+.c-btn.c-btn--small{
+  padding: rem(16) rem(59) rem(16) rem(45);
+  min-width: initial;
+}

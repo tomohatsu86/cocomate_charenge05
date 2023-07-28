@@ -1,0 +1,99 @@
+@use "global" as *;
+
+.p-header{
+  width: 100%;
+  height: rem(103);
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: $bg_green;
+}
+.p-header__inner{
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.p-header__logo{
+  width: rem(157);
+  height: inherit;
+  flex-shrink: 0;
+}
+.p-header__logo a{
+  height: inherit;
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.p-header__nav{
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.p-header__nav-list{
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.p-header__nav-item{
+  display: block;
+  height: inherit;
+  padding: 0 rem(16);
+  position: relative;
+}
+.p-header__nav-item a{
+  display: block;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  font-family: $font-main;
+  font-size: rem(15);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.04em;
+  color: $text;
+}
+.p-header__nav-item:hover a{
+  opacity: 1;
+}
+.p-header__nav-item::after{
+  position: absolute;
+  bottom: 10px;
+  left: rem(16);
+  content: "";
+  width: calc(100% - #{rem(32)});
+  height: 1px;
+  background-color: #8ECFC4;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+.p-header__nav-item:hover:after{
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  bottom: 30px;
+  visibility: visible;
+}
+
+.p-header__btn{
+  margin-left: rem(16);
+}
+
+
+@keyframes fadein-bottom {
+  0%{
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

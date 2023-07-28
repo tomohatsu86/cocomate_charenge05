@@ -11,9 +11,11 @@
 .p-mv__wrapper{
   height: inherit;
   position: relative;
-
+  padding-top: rem(80);
+  
   @include mq("md"){
     // min-height: rem(703);
+    padding-top: rem(103);
     width: 100%;
   }
   
@@ -67,7 +69,7 @@
   @include mq("md"){
     width: rem(370);
     font-size: rem(32);
-    top: rem(230);
+    top: rem(332);
     left: calc(344 / 1440) *100%;
   }
 }
@@ -92,7 +94,7 @@
   transform: rotate(-90deg) translateY(-50%);
   
   @include mq("md"){
-    top: 49%;
+    top: 42%;
     right: rem(-42);
   }
 }

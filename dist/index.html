@@ -31,37 +31,45 @@
 <body>
   
   <!-- ヘッダー -->
-  <header class="p-header">
+  <header class="p-header l-header">
     <div class="p-header__inner l-inner">
       <h1 class="p-header__logo">
         <a href="">
           <img src="./images/logo.png" alt="cocomate医療クリニック">
         </a>
       </h1>
-      <nav class="p-header__nav">
-        <ul class="p-header__nav-list">
-          <li class="p-header__nav-item">
-            <a href="">診療時間・アクセス</a>
-          </li>
-          <li class="p-header__nav-item">
-            <a href="">診療案内</a>
-          </li>
-          <li class="p-header__nav-item">
-            <a href="">スタッフ紹介</a>
-          </li>
-          <li class="p-header__nav-item">
-            <a href="">クリニック紹介</a>
-          </li>
-          <li class="p-header__nav-item">
-            <a href="">お問い合わせ</a>
-          </li>
-        </ul>
-        <div class="p-header__btn">
-          <a href="" class="c-btn c-btn--pink c-btn--small">診察予約</a>
+      <button class="p-header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="p-header__nav js-drawer">
+        <div class="p-header__nav-wrapper">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item">
+              <a href=""><span>診療時間・アクセス</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href=""><span>診療案内</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href=""><span>スタッフ紹介</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href=""><span>クリニック紹介</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href=""><span>お問い合わせ</span></a>
+            </li>
+          </ul>
+          <div class="p-header__btn">
+            <a href="" class="c-btn c-btn--pink c-btn--small">診察予約</a>
+          </div>
         </div>
       </nav>
     </div>
   </header>
+  
   
   <main>
   <!-- メインビュー -->

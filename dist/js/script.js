@@ -35,4 +35,13 @@ jQuery(function ($) {
     return false;
   });
 
+  $('.js-hamburger').click(function () {
+    $(this).toggleClass('is-open');
+    if( $(this).hasClass('is-open') ){
+      $('.js-drawer').fadeIn();
+    }else{
+      $('.js-drawer').fadeOut();
+    }
+  });
+
 });

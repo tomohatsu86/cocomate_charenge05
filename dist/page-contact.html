@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>Cocomate医療クリニック ｜ お問い合わせ</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <meta name=”robots” content=”noindex, nofollow”>
+  <!-- ファビコン -->
+  <link rel="icon" href="images/logo_small.png" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  
+  <!-- ヘッダー -->
+  <header class="p-header l-header">
+    <div class="p-header__inner l-inner">
+      <h1 class="p-header__logo">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="cocomate医療クリニック">
+        </a>
+      </h1>
+      <button class="p-header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="p-header__nav js-drawer">
+        <div class="p-header__nav-wrapper">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item">
+              <a href=""><span>診療時間・アクセス</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href=""><span>診療案内</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href=""><span>スタッフ紹介</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href=""><span>クリニック紹介</span></a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#"><span>お問い合わせ</span></a>
+            </li>
+          </ul>
+          <div class="p-header__btn">
+            <a href="" class="c-btn c-btn--pink c-btn--small">診察予約</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+
+  <!-- お問い合わせセクション -->
+    <section class="p-contact l-contact">
+      <div class=" p-contact__inner l-inner">
+        <h2 class="p-contact__title c-section-title" data-en="contact">お問い合わせ</h2>
+        <span class="p-contact__title--bar"></span>
+        <div class="p-contact__textbox">
+          <p class="p-contact__text">
+            育児に関することやお悩み・不安など、<br class="u-mobile">どうぞお気軽にご相談ください。<br>
+            一人でも多くのお子さまが笑顔で<br class="u-mobile">過ごせるように<br class="u-desktop">
+            cocomateクリニックの<br class="u-mobile">スタッフがサポートします。
+          </p>
+          <a class="p-contact__tel" href="tel:03-4579-9011">
+            Tel. <span>03-4579-9011</span>
+          </a>     
+        </div>
+
+        
+        <div class="p-contact__form">
+          <h2 class="p-contact__form-title c-section-title c-section-title--no-logo" data-en="contact form">お問い合わせフォーム</h2>
+          <form class="p-contact__form-body"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSelYLlpZuJ2riYHLcmKwt7SK7ViXXaSpZaVu34sqkDWDaAKIg/formResponse"
+            id="form">
+            <div class="p-contact__box">
+              <label class="p-contact__label" data-mark="必須"　for="name">お名前</label>
+              <input class="p-contact__input" type="text" name="entry.1064623342" id="name" placeholder="" required>
+            </div>
+            <div class="p-contact__box">              
+              <label class="p-contact__label" data-mark="必須" for="mail">メールアドレス</label>
+              <input class="p-contact__input" type="email" name="entry.215336501" id="mail" placeholder="" required>
+            </div>
+            <div class="p-contact__box">
+              <label class="p-contact__label p-contact__label--gray" data-mark="任意" for="tel">電話番号</label>
+              <input class="p-contact__input" type="tel" name="entry.90188756" id="tel" placeholder="">
+            </div>
+            <div class="p-contact__box">
+              <label class="p-contact__label p-contact__label--gray" data-mark="任意" for="address">住所</label>
+              <input class="p-contact__input" type="text" name="entry.600360445" id="address" placeholder="">
+            </div>
+            <div class="p-contact__box">
+              <p class="p-contact__label" data-mark="必須">ご要件</p>
+              <div class="p-contact__box-radio">
+                <div class="p-contact__radio-button">
+                  <input id="consultation" type="radio" name="entry.2096346796" required value="診察内容について" checked>
+                  <label for="consultation">診察内容について</label>
+                </div>
+                <div class="p-contact__radio-button"><input id="childcare" type="radio" name="entry.2096346796" required value="育児に関するご相談">
+                  <label for="childcare">育児に関するご相談</label>
+                </div>
+                <div class="p-contact__radio-button"><input id="other" type="radio" name="entry.2096346796" required value="その他">
+                  <label for="other">その他</label>
+                </div>
+              </div>
+            </div>
+            <div class="p-contact__box">
+              <label class="p-contact__label" data-mark="必須" for="content">お問い合わせ内容</label>
+              <textarea class="p-contact__input" name="entry.1487512429" id="content" cols="30" rows="10" placeholder=""></textarea><!-- /# -->
+            </div>
+            <div class="p-contact__submit">
+              <input type="submit" class="c-btn c-btn--noarrow" id="js-submit"  value="送信する" disabled>
+            </div>
+          </form>
+          <div class="p-contact__message">
+            <p class="p-contact__end-message">お問い合わせありがとうございました</p>
+            <p class="p-contact__false-message">送信失敗です</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!-- インフォメーション -->
+    <div class="p-info">
+      <div class="c-wave"></div>
+      <div class="p-info__inner">
+        <div class="p-info__detail">
+          <div class="p-info__access">
+            <div class="p-info__logo">
+              <img src="images/logo.png" alt="cocomate">
+            </div>
+            <a class="p-info__tel" href="tel:03-4579-9011">
+              Tel. <span>03-4579-9011</span>
+            </a>
+            <div class="p-info__address">
+              〒151-0000 東京都新宿区代々木1-1-1 <br class="u-mobile">SHIBUYAビル3F
+            </div>
+          </div>
+          <div class="p-info__schedule">
+            <table>
+              <tbody>
+                <tr>
+                  <th>受付時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th>土</th>
+                  <th>日/祝</th>
+                </tr>
+                <tr>
+                  <td>09:00~13:00</td>
+                  <td><span>●</span></td><!-- 月 -->
+                  <td><span>●</span></td><!-- 火 -->
+                  <td><span>●</span></td><!-- 水 -->
+                  <td><span>●</span></td><!-- 木 -->
+                  <td><span>●</span></td><!-- 金 -->
+                  <td><span>●</span></td><!-- 土 -->
+                  <td>-</td><!-- 日 -->
+                </tr>
+                <tr>
+                  <td>15:00~18:00</td>
+                  <td><span>●</span></td><!-- 月 -->
+                  <td><span>●</span></td><!-- 火 -->
+                  <td><span>●</span></td><!-- 水 -->
+                  <td><span>●</span></td><!-- 木 -->
+                  <td><span>●</span></td><!-- 金 -->
+                  <td>-</td><!-- 土 -->
+                  <td>-</td><!-- 日 -->
+                </tr>
+              </tbody>
+            </table>
+            <span>午前最終受付：12:30 午後最終受付：17:30</span>
+          </div>
+        </div>
+        <div class="p-info__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.915831105479!2d139.70062427559245!3d35.67907443009264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cc7880c2ae1%3A0xe5a9aafd22c9c40d!2z44CSMTUxLTAwNTMg5p2x5Lqs6YO95riL6LC35Yy65Luj44CF5pyo77yR5LiB55uu77yR4oiS77yRIOaYjuayu-elnuWuruS7o-OAheacqOiBt-iIjg!5e0!3m2!1sja!2sjp!4v1690237002429!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="p-info__btns">
+          <a href="" class="c-btn-large" data-en="contact">お問い合わせ</a>
+          <a href="" class="c-btn-large c-btn-large--pink" data-en="reserve">診察予約</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- フッター -->
+  <footer class="p-footer">
+    <div class="p-footer__inner">
+      <div class="p-footer__links">
+        <div class="p-footer__sns">
+          <a href=""><img src="./images/icon_insta.png" alt=""></a>
+          <a href=""><img src="./images/icon_twitter.png" alt=""></a>
+          <a href=""><img src="./images/icon_facebook.png" alt=""></a>
+        </div>
+        <ul class="p-footer__nav">
+          <li class="p-footer__item">
+            <a href="">診療時間・アクセス</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">診療案内</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">スタッフ紹介</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">クリニック紹介</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="#">お問い合わせ</a>
+          </li>
+          <li class="p-footer__item">
+            <a href="">診察予約</a>
+          </li>
+        </ul>
+      </div>
+      <div class="p-footer__bottom">
+        <div class="p-footer__policies">
+          <a href="">利用規約</a>
+          <a href="">プライバシーポリシー</a>
+        </div>
+        <p class="p-footer__copyright">Copyright(c) cocomate All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

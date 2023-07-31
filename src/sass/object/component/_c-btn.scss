@@ -42,3 +42,11 @@
   padding: rem(16) rem(59) rem(16) rem(45);
   min-width: initial;
 }
+.c-btn.c-btn--noarrow{
+  padding: rem(24) rem(64);
+  padding: rem(24) 64px;
+}
+.c-btn.c-btn--noarrow::after{
+  display: none;
+  border: 0;
+}

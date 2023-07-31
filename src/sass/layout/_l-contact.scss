@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-contact{
+  padding-top: rem(144);
+  padding-bottom: rem(80);
+
+  @include mq("md"){
+    padding-top: rem(144);
+    padding-bottom: rem(146);
+  }
+}

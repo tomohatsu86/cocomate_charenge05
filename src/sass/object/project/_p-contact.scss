@@ -170,11 +170,27 @@
 .p-contact__submit{
   margin-top: rem(55);
   text-align: center;
-  
-  @include mq("md"){
-    margin-left: calc(300 / 875) * 100%;
-  }
 }
+.p-contact__submit input{
+  font-family: $font-main;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(23 / 16);
+  letter-spacing: 0;
+  color: $white;
+  text-align: center;
+  background-color: $logo_green;
+  display: inline-block;
+  padding: rem(24) rem(80);
+  min-width: rem(224);
+  border-radius: rem(36);
+  position: relative;
+  transition: all .3s;
+}
+.p-contact__submit input:hover{
+  opacity: 0.7;
+}
+
 .p-contact__message{
   text-align: center;
 }

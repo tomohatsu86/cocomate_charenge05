@@ -3,12 +3,12 @@
 .p-cards{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: rem(40);
-  row-gap: rem(80);
+  column-gap: myrem(40);
+  row-gap: myrem(80);
   
   @include mq("md"){
-    column-gap: rem(40);
-    row-gap: rem(116);
+    column-gap: myrem(40);
+    row-gap: myrem(116);
     grid-template-columns: repeat(3, 1fr);
   }
 }

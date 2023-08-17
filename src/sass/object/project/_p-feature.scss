@@ -3,23 +3,23 @@
 .p-feature{
   // background-color: $bg_yellow_green;
   background: linear-gradient(to bottom, $bg_yellow_green 0, $bg_yellow_green 68%, $white 68%, $white 100%);
-  padding: rem(120) 0 rem(150);
+  padding: myrem(120) 0 myrem(150);
 }
 .p-feature__contents{
-  margin-top: rem(40);
+  margin-top: myrem(40);
   
   @include mq("md"){
-    margin-top: rem(56);
+    margin-top: myrem(56);
   }
 }
 .p-feature__item:nth-child(n+2){
-  margin-top: rem(80);
+  margin-top: myrem(80);
 }
 .p-feature__btn{
   text-align: center;
-  margin-top: rem(42);
+  margin-top: myrem(42);
   
   @include mq("md"){
-    margin-top: rem(64);
+    margin-top: myrem(64);
   }
 }

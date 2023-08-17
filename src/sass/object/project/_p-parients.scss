@@ -2,25 +2,25 @@
 
 .p-parients{
   width: 100%;
-  padding: rem(80) 0;
-  background-image: url(../images/img_parients-bg.jpg);
+  padding: myrem(80) 0;
+  background-image: url(../images/img_parients-bg.png);
   background-repeat: no-repeat;
   background-position: bottom 0 right 0;
   background-size: 50%;
   
   @include mq("md"){
-    padding: rem(120) 0;
+    padding: myrem(120) 0;
     background-size: calc(424/1440 * 100%);
   }
 }
 .p-parients__wrapper{
   width: 100%;
-  max-width: rem(1090);
-  padding: 0 rem(20);
+  max-width: myrem(1090);
+  padding: 0 myrem(20);
   margin: 0 auto;
   
   @include mq("md"){
-    padding: 0 rem(25);
+    padding: 0 myrem(25);
   }
 }
 .p-parients__body{
@@ -36,14 +36,14 @@
 }
 .p-parients__text{
   font-family: $font-main;
-  font-size: rem(16);
+  font-size: myrem(16);
   font-weight: 400;
   line-height: 2.0;
   letter-spacing: 0;
   color: $text;
   width: 100%;
-  max-width: rem(576);
-  margin-top: rem(30);
+  max-width: myrem(576);
+  margin-top: myrem(30);
   
   @include mq("md"){
     line-height: 2.8;
@@ -53,10 +53,10 @@
 .p-parients__link{
   width: 100%;
   text-align: left;
-  margin-top: rem(50);
+  margin-top: myrem(50);
   
   @include mq("md"){
-    margin-top: rem(32);
+    margin-top: myrem(32);
   }
 }
 

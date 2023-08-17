@@ -2,16 +2,16 @@
 
 .p-footer{
   width: 100%;
-  padding: rem(32) 0;
+  padding: myrem(32) 0;
   
   @include mq("md"){
-    padding: rem(56) 0;
+    padding: myrem(56) 0;
   }
 }
 .p-footer__inner{
   width: 100%;
-  max-width: rem(1090);
-  padding: 0 rem(25);
+  max-width: myrem(1090);
+  padding: 0 myrem(25);
   margin: 0 auto;
 }
 .p-footer__links{
@@ -24,13 +24,13 @@
 }
 .p-footer__sns{
   display: grid;
-  grid-template-columns: repeat(3, rem(32));
-  column-gap: rem(16);
+  grid-template-columns: repeat(3, myrem(32));
+  column-gap: myrem(16);
   flex-shrink: 0;
 }
 .p-footer__sns a{
   display: block;
-  width: rem(32);
+  width: myrem(32);
   transition: .3s;
 }
 .p-footer__sns a:hover{
@@ -42,30 +42,30 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-right: 0;
-  margin-left: rem(-16);
-  margin-top: rem(40);
+  margin-left: myrem(-16);
+  margin-top: myrem(40);
   
   @include mq("md"){
     justify-content: flex-end;
     margin-top: 0px;
-    margin-right: rem(-16);
+    margin-right: myrem(-16);
     margin-left: 0;
   }
 }
 .p-footer__item {
   position: relative;
-  margin-bottom: rem(20);
+  margin-bottom: myrem(20);
 }
 .p-footer__item a{
   font-family: $font-main;
-  font-size: rem(15);
+  font-size: myrem(15);
   font-weight: 400;
   line-height: 1.65;
   letter-spacing: 0.04em;
   color: $text;
   display: block;
-  padding-left: rem(16);
-  padding-right: rem(16);
+  padding-left: myrem(16);
+  padding-right: myrem(16);
   flex-shrink: 0;
   transition: .3s;
 }
@@ -75,9 +75,9 @@
 .p-footer__item::after{
   position: absolute;
   bottom: 10px;
-  left: rem(16);
+  left: myrem(16);
   content: "";
-  width: calc(100% - #{rem(32)});
+  width: calc(100% - #{myrem(32)});
   height: 1px;
   background-color: #8ECFC4;
   opacity: 0;
@@ -107,10 +107,10 @@
 
 
 .p-footer__bottom{
-  margin-top: rem(50);
+  margin-top: myrem(50);
   
   @include mq("md"){
-    margin-top: rem(38);
+    margin-top: myrem(38);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,29 +123,29 @@
   margin-right: 0;
 
   @include mq("md"){
-    margin-right: rem(20);
+    margin-right: myrem(20);
   }
 }
 .p-footer__policies a{
   display: block;
   font-family: $font-main;
-  font-size: rem(12);
+  font-size: myrem(12);
   font-weight: 400;
   line-height: 1.54;
   letter-spacing: 0.1em;
   color: $text;
 }
 .p-footer__policies a:nth-child(n+2){
-  margin-left: rem(40);
+  margin-left: myrem(40);
 }
 .p-footer__copyright{
   font-family: $font-main;
-  font-size: rem(10);
+  font-size: myrem(10);
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.14em;
   color: $text;
-  margin-top: rem(10);
+  margin-top: myrem(10);
   text-align: center;
   
   @include mq("md"){

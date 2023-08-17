@@ -15,25 +15,25 @@
   }
 }
 .p-media__box{
-  width: calc(100% - #{rem(20)});
+  width: calc(100% - #{myrem(20)});
   max-width: initial;
-  padding: rem(28);
-  border-radius: rem(16);
+  padding: myrem(28);
+  border-radius: myrem(16);
   background-color: $white;
-  box-shadow: 0 rem(10) rem(20) 0 rgba($color: #D2E991, $alpha: 0.1);
+  box-shadow: 0 myrem(10) myrem(20) 0 rgba($color: #D2E991, $alpha: 0.1);
   z-index: 1;
   position: relative;
-  margin: 0 rem(20);
+  margin: 0 myrem(20);
   
   @include mq("md"){
-    max-width: rem(509);
-    padding: rem(56);
+    max-width: myrem(509);
+    padding: myrem(56);
     margin: 0;
   }
 }
 .p-media__title{
   font-family: $font-main;
-  font-size: rem(20);
+  font-size: myrem(20);
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0;
@@ -42,29 +42,29 @@
   padding: 0 1px 0px;
   box-decoration-break: clone;
   // -webkit-box-decoration-break: clone;
-  border-radius: rem(2);
+  border-radius: myrem(2);
   box-shadow: inset 1px 0.99em 0px 0 #fff, inset 0 0 0 1em rgba($color: #D2E991, $alpha: 0.5);
 }
 .p-media__text{
   font-family: $font-main;
-  font-size: rem(15);
+  font-size: myrem(15);
   font-weight: 400;
   line-height: 1.8;
   letter-spacing: 0;
   color: $text;
-  margin-top: rem(15);
+  margin-top: myrem(15);
 }
 .p-media__img{
   width: 100%;
-  max-width: rem(950);
+  max-width: myrem(950);
   position: relative;
-  border-radius: rem(16);
+  border-radius: myrem(16);
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: rem(-30);
+  margin-bottom: myrem(-30);
   
   @include mq("md"){
-    margin-left: rem(-258);
+    margin-left: myrem(-258);
     margin-bottom: 0;
   }
 }
@@ -73,7 +73,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: rem(16);
+  border-radius: myrem(16);
   
   @include mq("md"){
     aspect-ratio: 950 / 395;
@@ -92,7 +92,7 @@
   margin-right: 0;
   
   @include mq("md"){
-    margin-right: rem(-258);
+    margin-right: myrem(-258);
     
   }
 }

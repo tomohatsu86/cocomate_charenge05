@@ -2,17 +2,17 @@
 
 .p-service{
   background-color: $bg_yellow_green;
-  padding: rem(100) 0 rem(136);
+  padding: myrem(100) 0 myrem(136);
   
   
   @include mq("md"){
-    padding: rem(217) 0 rem(172);
+    padding: myrem(217) 0 myrem(172);
   }
 }
 .p-service__contents{
-  margin-top: rem(40);
+  margin-top: myrem(40);
   
   @include mq("md"){
-    margin-top: rem(56);
+    margin-top: myrem(56);
   }
 }

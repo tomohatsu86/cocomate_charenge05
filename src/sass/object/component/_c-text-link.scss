@@ -2,13 +2,13 @@
 
 .c-text-link{
   font-family: $font-main;
-  font-size: rem(14);
+  font-size: myrem(14);
   font-weight: 400;
   line-height: calc(23 / 14);
   letter-spacing: 0.04em;
   color: $text;
-  min-width: rem(207);
-  padding-right: rem(76);
+  min-width: myrem(207);
+  padding-right: myrem(76);
   display: inline-flex;
   align-items: center;
   position: relative;
@@ -20,11 +20,11 @@
 .c-text-link::after{
   content: "";
   display: inline-block;
-  width: rem(48);
-  height: rem(1);
+  width: myrem(48);
+  height: myrem(1);
   background-color: $text;
   position: absolute;
-  right: rem(12);
+  right: myrem(12);
   transition: all .3s;
 }
 .c-text-link:hover::after{

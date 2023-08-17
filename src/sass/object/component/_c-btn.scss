@@ -2,7 +2,7 @@
 
 .c-btn{
   font-family: $font-main;
-  font-size: rem(16);
+  font-size: myrem(16);
   font-weight: 500;
   line-height: calc(23 / 16);
   letter-spacing: 0;
@@ -10,9 +10,9 @@
   text-align: center;
   background-color: $logo_green;
   display: inline-block;
-  padding: rem(24) rem(80);
-  min-width: rem(240);
-  border-radius: rem(36);
+  padding: myrem(24) myrem(80);
+  min-width: myrem(240);
+  border-radius: myrem(36);
   position: relative;
   transition: all .3s;
 }
@@ -22,29 +22,29 @@
 .c-btn::after{
   content: "";
   display: inline-block;
-  width: rem(8);
-  height: rem(11);
+  width: myrem(8);
+  height: myrem(11);
   background: url(../images/icon_arrow.png) no-repeat center center/contain;
   position: absolute;
   top: 50%;
-  right: rem(24);
+  right: myrem(24);
   transform: translateY(-50%);
   transition: all .3s;
 }
 .c-btn:hover:after{
-  right: rem(12);
+  right: myrem(12);
 }
 
 .c-btn.c-btn--pink{
   background-color: $btn_pink;
 }
 .c-btn.c-btn--small{
-  padding: rem(16) rem(59) rem(16) rem(45);
+  padding: myrem(16) myrem(59) myrem(16) myrem(45);
   min-width: initial;
 }
 .c-btn.c-btn--noarrow{
-  padding: rem(24) rem(64);
-  padding: rem(24) 64px;
+  padding: myrem(24) myrem(64);
+  padding: myrem(24) 64px;
 }
 .c-btn.c-btn--noarrow::after{
   display: none;

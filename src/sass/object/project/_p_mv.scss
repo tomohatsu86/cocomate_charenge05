@@ -91,8 +91,8 @@
   width: 188px;
   position: absolute;
   top: 42%;
-  right: calc(-188px / 2);
-  transform: rotate(-90deg) translateY(-50%);
+  right: calc((#{myrem(10)}/ 2) - (188px / 2));
+  transform: rotate(-90deg) translate(0, -50%);
   
   @include mq("md"){
     right: calc((#{myrem(100)}/ 2) - (188px / 2));

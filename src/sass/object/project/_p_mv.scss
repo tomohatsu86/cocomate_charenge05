@@ -88,14 +88,14 @@
   }
 }
 .p-mv__copyright{
+  width: 188px;
   position: absolute;
-  top: 60%;
-  right: myrem(-87);
+  top: 42%;
+  right: calc(-188px / 2);
   transform: rotate(-90deg) translateY(-50%);
   
   @include mq("md"){
-    top: 42%;
-    right: myrem(-42);
+    right: calc((#{myrem(100)}/ 2) - (188px / 2));
   }
 }
 .p-mv__copyright small{

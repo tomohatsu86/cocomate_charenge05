@@ -33,7 +33,7 @@ body {
 // ホバー
 a,
 button {
-  pointer-events: none;
+  // pointer-events: none;
   @include mq(md) {
     pointer-events: auto;
     transition: .3s;

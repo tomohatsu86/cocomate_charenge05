@@ -52,12 +52,16 @@
     margin-top: 0;
   }
 }
-.p-news__item  a:hover {
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .p-news__item  a:hover {
+    opacity: 1;
+  }
 }
-.p-news__item  a:hover .p-news__title {
-  opacity: 1;
-  text-decoration: underline;
+@media (hover: hover) and (pointer: fine) {
+  .p-news__item  a:hover .p-news__title {
+    opacity: 1;
+    text-decoration: underline;
+  }
 }
 .p-news__item + .p-news__item{
   margin-top: myrem(24);

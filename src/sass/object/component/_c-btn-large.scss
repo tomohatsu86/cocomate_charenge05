@@ -36,8 +36,10 @@
   text-transform: capitalize;
   margin-top: myrem(12);
 }
-.c-btn-large:hover{
-  opacity: 0.7;
+@media (hover: hover) and (pointer: fine) {
+  .c-btn-large:hover{
+    opacity: 0.7;
+  }
 }
 .c-btn-large::after{
   content: "";
@@ -51,8 +53,10 @@
   transform: translateY(-50%);
   transition: all .3s;
 }
-.c-btn-large:hover:after{
-  right: myrem(20);
+@media (hover: hover) and (pointer: fine) {
+  .c-btn-large:hover:after{
+    right: myrem(20);
+  }
 }
 .c-btn-large.c-btn-large--pink{
   background-color: $btn_pink;

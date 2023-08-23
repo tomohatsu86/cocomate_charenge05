@@ -187,9 +187,11 @@
   position: relative;
   transition: all .3s;
 }
-.p-contact__submit input:hover{
-  cursor: pointer;
-  opacity: 0.7;
+@media (hover: hover) and (pointer: fine) {
+  .p-contact__submit input:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
 }
 
 .p-contact__message{

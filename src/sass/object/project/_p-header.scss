@@ -148,8 +148,10 @@
   position: relative;
   display: inline-block;
 }
-.p-header__nav-item:hover a{
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .p-header__nav-item:hover a{
+    opacity: 1;
+  }
 }
 .p-header__nav-item a span::after{
   position: absolute;
@@ -163,14 +165,16 @@
   visibility: hidden;
   transition: all .3s;
 }
-.p-header__nav-item a:hover span:after{
-  opacity: 0;
-  animation-name: fadein-bottom;
-  animation-duration: .5s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  bottom: -5px;
-  visibility: visible;
+@media (hover: hover) and (pointer: fine) {
+  .p-header__nav-item a:hover span:after{
+    opacity: 0;
+    animation-name: fadein-bottom;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    bottom: -5px;
+    visibility: visible;
+  }
 }
 
 .p-header__btn{

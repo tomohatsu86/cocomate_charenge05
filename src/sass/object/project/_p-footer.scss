@@ -33,8 +33,10 @@
   width: myrem(32);
   transition: .3s;
 }
-.p-footer__sns a:hover{
-  opacity: 0.7;
+@media (hover: hover) and (pointer: fine) {
+  .p-footer__sns a:hover{
+    opacity: 0.7;
+  }
 }
 .p-footer__nav{
   display: flex;
@@ -69,8 +71,10 @@
   flex-shrink: 0;
   transition: .3s;
 }
-.p-footer__item:hover a{
-  opacity: 1;
+@media (hover: hover) and (pointer: fine) {
+  .p-footer__item:hover a{
+    opacity: 1;
+  }
 }
 .p-footer__item::after{
   position: absolute;
@@ -84,14 +88,16 @@
   visibility: hidden;
   transition: all .3s;
 }
-.p-footer__item:hover::after{
-  opacity: 0;
-  animation-name: fadein-bottom;
-  animation-duration: .5s; /*下線が戻る速さ*/
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  bottom: -8px;
-  visibility: visible;
+@media (hover: hover) and (pointer: fine) {
+  .p-footer__item:hover::after{
+    opacity: 0;
+    animation-name: fadein-bottom;
+    animation-duration: .5s; /*下線が戻る速さ*/
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    bottom: -8px;
+    visibility: visible;
+  }
 }
 
 @keyframes fadein-bottom {
